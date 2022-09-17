@@ -8,24 +8,43 @@ body * {
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-color: #8396d4;
 }
 
-.container{
+.container {
 margin-top: 100px;
 width: 800px;
 margin-left: calc(50% - 400px);
 }
 
-.left-column{
+.left-column {
 width: 40%;
 float: left;
 padding: 40px;
-background-color: red;
+background-color: #008fae;
+color: #fff;
 }
 
-.right-column{
+.main-title {
+width: 100%;
+color: #fff;
+font-size: 40px;
+font-weight: normal;
+margin-bottom: 250px;
+}
+
+.bottom-links {
+
+}
+
+.bottom-links > .link {
+    color: #fff;
+    text-decoration:solid underline grey 3px;
+}
+
+.right-column {
 width: 60%;
 float: left;
 padding: 60px;
-background-color: blue;
+background-color: #fff;
 }
