@@ -6,12 +6,13 @@
     padding-right: 30px;
     border-radius: 20px; /* pasiemam maziausia krastine, kas yra aukstis ir suskaiciuojam puse jos dydzio - line-height 20px + padding 8px+8px is abieju pusiu + nematomas borderis 2px+2px virsuj apacioj = 40px/2=20px  */
     border-color: #00f;
-    background-color: #015cda;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, #234ad5 0%, #0265de 100%);
     color: #fff;
     font-weight: bold;
     cursor: pointer;
 }
 
 .btn:hover{
-    background-color: #36f;
+    background: linear-gradient(-90deg, #234ad5 0%, #0265de 100%);
 }
