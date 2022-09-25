@@ -1,32 +1,24 @@
-body,
-body * {
-    margin: 0;
-    padding: 0;
-    vertical-align: top;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-background-color: #8396d4;
-}
-
 .container {
+display: inline-block;
+/* inline-block, nes abu vaikai floatinami ir tevinis elementas del to turejo 0 auksti */
 margin-top: 100px;
 width: 800px;
 margin-left: calc(50% - 400px);
+position: relative;
 }
 
 .left-column {
 width: 40%;
-float: left;
 padding: 40px;
 background-color: #008fae;
 background-image: url(../img/hill.png);
 background-size: cover;
 background-position: center;
 color: #fff;
-
+position: absolute;
+bottom: 30px;
+top: 30px;
+left: 0;
 }
 
 .main-title {
@@ -38,7 +30,10 @@ margin-bottom: 250px;
 }
 
 .bottom-links {
-
+position: absolute;
+bottom: 20px;
+left: 40px;
+right: 40px;
 }
 
 .bottom-links > .link {
@@ -48,7 +43,23 @@ margin-bottom: 250px;
 
 .right-column {
 width: 60%;
-float: left;
+float: right;
 padding: 60px;
 background-color: #fff;
+position: relative;
+}
+
+.close {
+width: 60px;
+height: 60px;
+font-size: 30px;
+text-align: center; /* isscentravimas pagal ploti */
+line-height: 55px; /* isscentravimas pagal auksti (centruojam pagal height: 60px; 55%, 45% taisykle - line-height teksto centras nuo virsaus yra 55%, o apacia 45%, todel rasom 55px, o ne 60px) */
+
+/* X elemento pastatymas i desini kampa virsuje */
+
+position: absolute; /* elementas kuris yra pozicijonuojamas absoliuciai yra statomas artimiausio (by default position: static;) ne statinio elemento atzvilgiu */
+top: 0;
+right: 0;
+cursor: pointer;
 }
