@@ -1,5 +1,6 @@
 .container {
 display: inline-block;
+/* inline-block, nes abu vaikai floatinami ir tevinis elementas del to turejo 0 auksti */
 margin-top: 100px;
 width: 800px;
 margin-left: calc(50% - 400px);
@@ -60,4 +61,5 @@ line-height: 55px; /* isscentravimas pagal auksti (centruojam pagal height: 60px
 position: absolute; /* elementas kuris yra pozicijonuojamas absoliuciai yra statomas artimiausio (by default position: static;) ne statinio elemento atzvilgiu */
 top: 0;
 right: 0;
+cursor: pointer;
 }
