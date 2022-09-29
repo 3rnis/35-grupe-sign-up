@@ -14,13 +14,11 @@ display: inline-block;
 /* inline-block, nes abu vaikai floatinami ir tevinis elementas del to turejo 0 auksti */
 width: 800px;
 
-
 /* elemento isscentravimas */
 position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%); /* elementas pasitraukia per puse elemento plocio ir aukscio */
-
 }
 
 .left-column {
@@ -30,6 +28,7 @@ background-color: #008fae;
 background-image: url(../img/hill.png);
 background-size: cover;
 background-position: center;
+background-repeat: no-repeat;
 color: #fff;
 position: absolute;
 bottom: 30px;
@@ -39,10 +38,8 @@ left: 0;
 
 .main-title {
 width: 100%;
-color: #fff;
 font-size: 40px;
 font-weight: normal;
-margin-bottom: 250px;
 }
 
 .bottom-links {
