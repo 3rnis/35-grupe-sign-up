@@ -1,0 +1,78 @@
+body {
+    height: 100vh;
+    position: relative;
+    /* 100vh = 100% ekrano dydzio */
+    background-color: #008fae;
+    background-image: url(../img/hill.png);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(15px);
+}
+
+.container {
+display: inline-block;
+/* inline-block, nes abu vaikai floatinami ir tevinis elementas del to turejo 0 auksti */
+width: 800px;
+
+/* elemento isscentravimas */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); /* elementas pasitraukia per puse elemento plocio ir aukscio */
+}
+
+.left-column {
+width: 40%;
+padding: 40px;
+background-color: #008fae;
+background-image: url(../img/hill.png);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+color: #fff;
+position: absolute;
+bottom: 30px;
+top: 30px;
+left: 0;
+}
+
+.main-title {
+width: 100%;
+font-size: 40px;
+font-weight: normal;
+}
+
+.bottom-links {
+position: absolute;
+bottom: 20px;
+left: 40px;
+right: 40px;
+}
+
+.bottom-links > .link {
+    color: #fff;
+    text-decoration:solid underline grey 3px;
+}
+
+.right-column {
+width: 60%;
+float: right;
+padding: 60px;
+background-color: #fff;
+position: relative;
+}
+
+.close {
+width: 60px;
+height: 60px;
+font-size: 30px;
+text-align: center; /* isscentravimas pagal ploti */
+line-height: 55px; /* isscentravimas pagal auksti (centruojam pagal height: 60px; 55%, 45% taisykle - line-height teksto centras nuo virsaus yra 55%, o apacia 45%, todel rasom 55px, o ne 60px) */
+
+/* X elemento pastatymas i desini kampa virsuje */
+
+position: absolute; /* elementas kuris yra pozicijonuojamas absoliuciai yra statomas artimiausio (by default position: static;) ne statinio elemento atzvilgiu */
+top: 0;
+right: 0;
+cursor: pointer;
+}
