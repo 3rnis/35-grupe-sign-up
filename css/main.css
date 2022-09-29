@@ -2,6 +2,11 @@ body {
     height: 100vh;
     position: relative;
     /* 100vh = 100% ekrano dydzio */
+    background-color: #008fae;
+    background-image: url(../img/hill.png);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(15px);
 }
 
 .container {
