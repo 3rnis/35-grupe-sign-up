@@ -24,21 +24,21 @@
     width: 100%;
     border: none;
     border-bottom: 2px solid #777;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 0;
     }
 
     .form > .form-row > .input:focus-visible {
         outline: 1px solid red;
     }
     
-    .form a, span {
+    .form span {
         /* isscentravimas buttono atzvilgiu - paskaiciuojam bendra button auksti - line-height 20px + padding 8px+8px is abieju pusiu + nematomas borderis 2px+2px virsuj apacioj = 40px */
     line-height: 40px;
-    margin-left: 10px;
+    margin: 0 10px;
     }
 
     .form a{
+        line-height: 40px;
         text-decoration: none;
     }
 
